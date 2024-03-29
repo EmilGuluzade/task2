@@ -1,0 +1,46 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+.header {z-index: 101;
+  background-color: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__nav {
+    ul {
+      @include text-center();
+      gap: 20px;
+      li {
+        display: flex;
+        gap: 10px;
+      }
+      a {
+        color: $text-dark;
+      }
+    }
+  }
+
+  &__cart {
+    .row {
+      gap: 10px;
+
+      a{
+        background-color:$primary-color ;
+        border-radius: 50%;
+        color: white;
+        padding: 15px;display: block;
+      }
+    }
+  }
+&__cart-header{
+
+
+  font-size: 2px;
+    line-height: 1.4;
+}
+
+}

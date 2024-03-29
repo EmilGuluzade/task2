@@ -1,0 +1,131 @@
+.hero {
+  position: relative;
+  background: rgba(0, 0, 0, 0.859)
+    url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp")
+    no-repeat center/cover;
+
+  padding: 200px 0;
+  display: flex;
+  text-align: center;
+  z-index: 0;
+  &::after {
+    content: "";
+    top: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.436);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    font-size: 80px;
+    font-family: Poppins;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    text-shadow: hsla(0, 0%, 100%, 0.6) -2px 2px 30px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin: 0 auto;
+    font-size: 25px;
+    color: white;
+    max-width: 700px;
+    margin-bottom: 50px;
+    font-family: Jost, sans-serif;
+  }
+
+  &__select {
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 3rem;
+    padding-right: 8rem;
+    border: 1px solid $primary-color;
+    color: $primary-color;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .row {
+    gap: 30px;
+  }
+}
+
+.popular {
+  text-align: center;
+  color: $text-dark;
+  padding: 120px 0;
+  a {
+    margin-top: 70px;
+  }
+  .row {
+    justify-content: space-between;
+    margin-bottom: 30px;
+    h5 {
+      margin-bottom: 0.5rem;
+      font-family: Satisfy, cursive;
+      font-size: 20px;
+      line-height: 1.2;
+
+      color: $primary-color;
+    }
+    h2 {
+      font-size: 35px;
+      font-weight: 500;
+
+      color: $text-dark;
+    }
+  }
+  &__cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  &__card {
+    &:hover h3 {
+      color: $primary-color;
+    }
+    width: 33.33%;
+
+    &__card-header {
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+    }
+    h3 {
+      transition: 0.3s;
+      margin: 10px 0;
+      font-size: 22px;
+      line-height: 1.4;
+    }
+  }
+  &__card-content {
+    display: flex;
+    width: 100%;
+    gap: 25px;
+    div {
+      display: flex;
+
+      gap: 10px;
+
+      i,
+      span {
+        color: $primary-color;
+      }
+    }
+  }
+
+  &__explore {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
