@@ -1,8 +1,5 @@
 .hero {
   position: relative;
-  background: rgba(0, 0, 0, 0.859)
-    url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp")
-    no-repeat center/cover;
 
   padding: 200px 0;
   display: flex;
@@ -55,6 +52,7 @@
 }
 
 .popular {
+  background-color: white;
   text-align: center;
   color: $text-dark;
   padding: 120px 0;
@@ -128,4 +126,315 @@
     align-items: center;
     gap: 10px;
   }
+}
+
+$color_1: #ff7c5b;
+$color_2: rgb(3, 4, 21);
+$color_3: #030415;
+$font-family_1: Satisfy, cursive;
+$background-color_1: #fff4e2;
+$background-color_2: #fff;
+$font-family_2: Jost, sans-serif;
+
+.destination {
+  text-align: center;
+  padding-top: 120px;
+  background-color: $background-color_1;
+  h5 {
+    margin-bottom: 0.25rem;
+    font-family: $font-family_1;
+    font-size: 24px;
+    line-height: 1.2;
+    color: $color_1;
+  }
+  h2 {
+    padding-bottom: 60px;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $color_2;
+  }
+  .btn {
+    margin: 100px 0;
+  }
+  .destination__cities {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .destination__city {
+    text-align: center;
+    width: 20%;
+    p {
+      margin-top: 0.5rem;
+      font-weight: 500;
+      color: $color_1;
+    }
+  }
+  .destination__city-title {
+    display: block;
+    color: $color_3;
+    font-size: 22px;
+    margin-top: 1.75rem;
+    font-weight: 500;
+  }
+  .destination__city-head {
+    display: block;
+    background-color: $background-color_2;
+    padding: 40px;
+  }
+}
+
+.travel {
+  text-align: center;
+  padding: 120px 0;
+  background-color: $background-color_2;
+  h5 {
+    margin-bottom: 0.25rem;
+    font-family: $font-family_1;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ff7c5b;
+  }
+  h2 {
+    padding-bottom: 60px;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #030415;
+  }
+  .travel__cards {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+  }
+  .travel__card {
+    text-align: center;
+    width: 33.3333%;
+    h4 {
+      line-height: 1.6;
+      font-weight: 500;
+      margin-top: 1.25rem;
+      font-size: 22px;
+    }
+    p {
+      font-size: 16px;
+      font-family: $font-family_2;
+      font-size: 14px;
+      line-height: 1.9;
+      margin-top: 0.5rem;
+      color: rgb(91, 91, 91);
+    }
+  }
+}
+
+.view {
+  background: url("	https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/video-banner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h2 {
+    font-size: 48px;
+    color: #fff;
+  }
+  p {
+    width: 500px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 1rem;
+  }
+  .view__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: $color_1;
+  }
+}
+.partner {
+  background-color: white;
+  padding: 120px 0 0;
+  .row {
+    justify-content: space-between;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+  }
+}
+
+.insta-feed {
+  padding: 100px;
+  background-color: white;
+  img {
+    width: 20%;
+  }
+  .row {
+    gap: 30px;
+    justify-content: center;
+  }
+}
+.blog {
+  background-color: white;
+  padding: 120px 0 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h5 {
+    margin-bottom: 0.25rem;
+    font-family: $font-family_1;
+    font-size: 24px;
+    color: $color_1;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    font-family: $font-family_2;
+  }
+  .blog__card-content {
+    padding: 20px 40px;
+    .row {
+      p {
+        i {
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+    }
+    h4 {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+      font-weight: 500;
+    }
+    a {
+      margin-top: 20px;
+      display: block;
+      margin-top: 18px;
+      color: $color_1;
+    }
+  }
+  .blog__card {
+    &:hover {
+      h4 {
+        color: $color_1;
+      }
+    }
+    margin: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .blog__card-info {
+    font-family: Jost, sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-top: 20px;
+    color: rgb(91, 91, 91);
+  }
+}
+
+.tour {
+  background-color: white;
+  padding: 120px 0 0;
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    gap: 30px;
+  }
+  h5 {
+    margin-bottom: 0.25rem;
+    font-family: $font-family_1;
+    font-size: 24px;
+    color: $color_1;
+  }
+  h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    font-family: $font-family_2;
+  }
+
+  .tour__card {
+    position: relative;
+
+    &:hover h4 {
+      color: #ff7c5b;
+    }
+  }
+  h4 {
+    font-size: 24px;
+  }
+  .tour__card-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+  }
+  span {
+    margin-left: 20px;
+  }
+}
+
+.comment {
+  background-color: #ffffff;
+
+  padding: 100px 0 10px;
+
+  .row {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 60px 80px;
+    border-radius: 10px;
+    display: flex;align-items: center;
+    gap: 70px ;
+  }
+
+  &__left {
+    text-align: center;
+
+    h5 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 1rem;
+    }
+    p {
+      margin-top: 0.25rem;
+      font-family: Jost, sans-serif;
+      font-size: 16px;
+      color: rgb(53, 53, 53);
+      font-weight: 100;
+    }
+  }
+
+
+  &__right{
+p{padding: 30px;
+  font-size: 25px;line-height: 1.8;
+  font-family: Playfair Display, serif;
+}
+.quote{
+  float: right;
+}
+}
 }

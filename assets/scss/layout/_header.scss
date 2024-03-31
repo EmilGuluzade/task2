@@ -1,5 +1,12 @@
 @import "../utils/variables";
 @import "../utils/mixins";
+
+body{
+  background: 
+    url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp")
+    no-repeat center/cover;
+    background-attachment: fixed;
+}
 .header {z-index: 101;
   background-color: #fff;
   padding: 10px;

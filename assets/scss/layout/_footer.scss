@@ -1,11 +1,162 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
+$color_1: rgb(3, 4 ,21);
+$color_2: white;
+$color_3: #ff7c5b;
+$font-family_1: Playfair Display, serif;
+$font-family_2: Jost, sans-serif;
+$background-color_1: #fff;
+$background-color_2: #ff7c5b;
+$background-color_3: rgb(33, 159, 255);
+
 .footer {
-  padding: 70px 0;
-  background: linear-gradient(
-      rgba(8, 8, 11, 0.8) 100%,
-      rgba(8, 8, 11, 0.8) 100%
-    ),
-    url("	https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/footer-bg-1.webp");
+	padding: 70px 0;
+	background: linear-gradient( rgba(8, 8, 11, 0.8) 100%, rgba(8, 8, 11, 0.8) 100% ), url("	https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/footer-bg-1.webp");
+	h3 {
+		font-size: 25px;
+		color: $color_2;
+		margin-bottom: 20px;
+	}
+}
+.footer__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 30px;
+}
+.footer__sosial {
+	display: flex;
+	gap: 2.25rem;
+	i {
+		background-color: $background-color_1;
+		color: $color_1;
+		margin-right: 1rem;
+		height: 2.5rem;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 2.5rem;
+		--tw-shadow: 0 0 0 5px #ffffff66;
+		--tw-shadow-colored: 0 0 0 5px;
+		box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow);
+	}
+	a {
+		display: flex;
+		align-items: center;
+		color: $color_2;
+		font-size: 20px;
+		font-family: $font-family_1;
+		font-weight: 700;
+		display: flex;
+		align-items: center;
+		color: $color_2;
+		font-size: 20px;
+		font-family: $font-family_1;
+		font-weight: 700;
+		i {
+			&:hover {
+				background-color: $background-color_2;
+			}
+		}
+	}
+}
+.footer__copy {
+	position: relative;
+	color: $color_2;
+	padding-top: 1.75rem;
+	padding-bottom: 1.75rem;
+	display: flex;
+	justify-content: space-between;
+	font-family: $font-family_2;
+	font-size: 16px;
+	ul {
+		display: flex;
+		gap: 10px;
+		a {
+			color: $color_2;
+			&:hover {
+				color: $color_3;
+			}
+		}
+	}
+}
+.footer__mid {
+	position: relative;
+	width: 100%;
+	display: flex;
+	padding: 70px 0;
+	justify-content: space-between;
+	&::after {
+		content: "";
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		height: 2px;
+		width: 100%;
+		background-image: linear-gradient( 90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.8) 48.96%, rgba(53, 53, 53, 0) 100% );
+	}
+	&::before {
+		content: "";
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 2px;
+		width: 100%;
+		background-image: linear-gradient( 90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.8) 48.96%, rgba(53, 53, 53, 0) 100% );
+	}
+}
+.footer__mid-right {
+	width: 22.3333%;
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		a {
+			color: $color_2;
+			i {
+				position: static;
+				margin-right: 10px;
+				color: $color_3;
+			}
+			&:hover {
+				color: $color_3;
+			}
+		}
+	}
+}
+.footer__mid-left {
+	display: flex;
+	flex-direction: column;
+	width: 35%;
+	margin-right: 150px;
+	input {
+		color: $color_2;
+		padding: 20px;
+		background: transparent;
+		border: 1px solid rgb(182, 159, 159);
+		outline-offset: 2px;
+		margin-bottom: 10px;
+	}
+}
+.footer__hire {
+	width: 120px;
+	margin-top: 30px;
+	color: $color_2;
+	border-radius: 30px;
+	padding: 10px;
+	text-align: center;
+	background-color: $background-color_3;
+}
+.footer__up {
+	border-radius: 50%;
+	background-color: $background-color_2;
+	position: absolute;
+	color: $color_2;
+	padding: 20px;
+	font-size: 20px;
+	top: -40px;
+	left: 50%;
+	transform: translateX(-50%);
 }

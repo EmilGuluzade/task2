@@ -3,13 +3,13 @@
 
 .btn {
 &:hover{
-    background-color:$primary-color;
-    opacity: 0.85;
+    background-color:rgb(240, 156, 135);
+
 }
 
   background-color: $primary-color;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; 
   padding-left: 2.5rem;
   padding-right: 2.5rem;
   color: white;

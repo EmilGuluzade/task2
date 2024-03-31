@@ -16,6 +16,10 @@ a {
 .row {
   display: flex; }
 
+body {
+  background: url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp") no-repeat center/cover;
+  background-attachment: fixed; }
+
 .header {
   z-index: 101;
   background-color: #fff;
@@ -58,12 +62,10 @@ a {
   display: inline-block;
   text-align: center; }
   .btn:hover {
-    background-color: #ff7c5b;
-    opacity: 0.85; }
+    background-color: #f09c87; }
 
 .hero {
   position: relative;
-  background: rgba(0, 0, 0, 0.859) url("https://arid-html.vercel.app/main-file/dist/assets/images/hero/h4.webp") no-repeat center/cover;
   padding: 200px 0;
   display: flex;
   text-align: center;
@@ -106,6 +108,7 @@ a {
     gap: 30px; }
 
 .popular {
+  background-color: white;
   text-align: center;
   color: #030415;
   padding: 120px 0; }
@@ -158,5 +161,373 @@ a {
     align-items: center;
     gap: 10px; }
 
+.destination {
+  text-align: center;
+  padding-top: 120px;
+  background-color: #fff4e2; }
+  .destination h5 {
+    margin-bottom: 0.25rem;
+    font-family: Satisfy, cursive;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ff7c5b; }
+  .destination h2 {
+    padding-bottom: 60px;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #030415; }
+  .destination .btn {
+    margin: 100px 0; }
+  .destination .destination__cities {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between; }
+  .destination .destination__city {
+    text-align: center;
+    width: 20%; }
+    .destination .destination__city p {
+      margin-top: 0.5rem;
+      font-weight: 500;
+      color: #ff7c5b; }
+  .destination .destination__city-title {
+    display: block;
+    color: #030415;
+    font-size: 22px;
+    margin-top: 1.75rem;
+    font-weight: 500; }
+  .destination .destination__city-head {
+    display: block;
+    background-color: #fff;
+    padding: 40px; }
+
+.travel {
+  text-align: center;
+  padding: 120px 0;
+  background-color: #fff; }
+  .travel h5 {
+    margin-bottom: 0.25rem;
+    font-family: Satisfy, cursive;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ff7c5b; }
+  .travel h2 {
+    padding-bottom: 60px;
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #030415; }
+  .travel .travel__cards {
+    display: flex;
+    gap: 40px;
+    justify-content: space-between; }
+  .travel .travel__card {
+    text-align: center;
+    width: 33.3333%; }
+    .travel .travel__card h4 {
+      line-height: 1.6;
+      font-weight: 500;
+      margin-top: 1.25rem;
+      font-size: 22px; }
+    .travel .travel__card p {
+      font-size: 16px;
+      font-family: Jost, sans-serif;
+      font-size: 14px;
+      line-height: 1.9;
+      margin-top: 0.5rem;
+      color: #5b5b5b; }
+
+.view {
+  background: url("	https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/video-banner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .view .container {
+    padding: 10rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .view h2 {
+    font-size: 48px;
+    color: #fff; }
+  .view p {
+    width: 500px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 1rem; }
+  .view .view__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: #ff7c5b; }
+
+.partner {
+  background-color: white;
+  padding: 120px 0 0; }
+  .partner .row {
+    justify-content: space-between;
+    align-items: center; }
+    .partner .row img {
+      cursor: pointer; }
+
+.insta-feed {
+  padding: 100px;
+  background-color: white; }
+  .insta-feed img {
+    width: 20%; }
+  .insta-feed .row {
+    gap: 30px;
+    justify-content: center; }
+
+.blog {
+  background-color: white;
+  padding: 120px 0 0; }
+  .blog .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .blog h5 {
+    margin-bottom: 0.25rem;
+    font-family: Satisfy, cursive;
+    font-size: 24px;
+    color: #ff7c5b; }
+  .blog h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    font-family: Jost, sans-serif; }
+  .blog .blog__card-content {
+    padding: 20px 40px; }
+    .blog .blog__card-content .row p i {
+      margin-right: 10px;
+      margin-left: 10px; }
+    .blog .blog__card-content h4 {
+      font-size: 22px;
+      line-height: 1.5;
+      margin-top: 0.5rem;
+      font-weight: 500; }
+    .blog .blog__card-content a {
+      margin-top: 20px;
+      display: block;
+      margin-top: 18px;
+      color: #ff7c5b; }
+  .blog .blog__card {
+    margin: 60px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; }
+    .blog .blog__card:hover h4 {
+      color: #ff7c5b; }
+  .blog .blog__card-info {
+    font-family: Jost, sans-serif;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-top: 20px;
+    color: #5b5b5b; }
+
+.tour {
+  background-color: white;
+  padding: 120px 0 0; }
+  .tour .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .tour .row {
+    gap: 30px; }
+  .tour h5 {
+    margin-bottom: 0.25rem;
+    font-family: Satisfy, cursive;
+    font-size: 24px;
+    color: #ff7c5b; }
+  .tour h2 {
+    font-size: 40px;
+    line-height: 1.5;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    font-family: Jost, sans-serif; }
+  .tour .tour__card {
+    position: relative; }
+    .tour .tour__card:hover h4 {
+      color: #ff7c5b; }
+  .tour h4 {
+    font-size: 24px; }
+  .tour .tour__card-content {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px; }
+  .tour span {
+    margin-left: 20px; }
+
+.comment {
+  background-color: #ffffff;
+  padding: 100px 0 10px; }
+  .comment .row {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 60px 80px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 70px; }
+  .comment__left {
+    text-align: center; }
+    .comment__left h5 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-top: 1rem; }
+    .comment__left p {
+      margin-top: 0.25rem;
+      font-family: Jost, sans-serif;
+      font-size: 16px;
+      color: #353535;
+      font-weight: 100; }
+  .comment__right p {
+    padding: 30px;
+    font-size: 25px;
+    line-height: 1.8;
+    font-family: Playfair Display, serif; }
+  .comment__right .quote {
+    float: right; }
+
 .footer {
+  padding: 70px 0;
   background: linear-gradient(rgba(8, 8, 11, 0.8) 100%, rgba(8, 8, 11, 0.8) 100%), url("	https://arid-html.vercel.app/main-file/dist/assets/images/backgrounds/footer-bg-1.webp"); }
+  .footer h3 {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 20px; }
+
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px; }
+
+.footer__sosial {
+  display: flex;
+  gap: 2.25rem; }
+  .footer__sosial i {
+    background-color: #fff;
+    color: #030415;
+    margin-right: 1rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    --tw-shadow: 0 0 0 5px #ffffff66;
+    --tw-shadow-colored: 0 0 0 5px;
+    box-shadow: 0 0 #0000, 0 0 #0000, var(--tw-shadow); }
+  .footer__sosial a {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: Playfair Display, serif;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: Playfair Display, serif;
+    font-weight: 700; }
+    .footer__sosial a i:hover {
+      background-color: #ff7c5b; }
+
+.footer__copy {
+  position: relative;
+  color: white;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  display: flex;
+  justify-content: space-between;
+  font-family: Jost, sans-serif;
+  font-size: 16px; }
+  .footer__copy ul {
+    display: flex;
+    gap: 10px; }
+    .footer__copy ul a {
+      color: white; }
+      .footer__copy ul a:hover {
+        color: #ff7c5b; }
+
+.footer__mid {
+  position: relative;
+  width: 100%;
+  display: flex;
+  padding: 70px 0;
+  justify-content: space-between; }
+  .footer__mid::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.8) 48.96%, rgba(53, 53, 53, 0) 100%); }
+  .footer__mid::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 2px;
+    width: 100%;
+    background-image: linear-gradient(90deg, rgba(53, 53, 53, 0) 0%, rgba(53, 53, 53, 0.8) 48.96%, rgba(53, 53, 53, 0) 100%); }
+
+.footer__mid-right {
+  width: 22.3333%; }
+  .footer__mid-right ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; }
+    .footer__mid-right ul a {
+      color: white; }
+      .footer__mid-right ul a i {
+        position: static;
+        margin-right: 10px;
+        color: #ff7c5b; }
+      .footer__mid-right ul a:hover {
+        color: #ff7c5b; }
+
+.footer__mid-left {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-right: 150px; }
+  .footer__mid-left input {
+    color: white;
+    padding: 20px;
+    background: transparent;
+    border: 1px solid #b69f9f;
+    outline-offset: 2px;
+    margin-bottom: 10px; }
+
+.footer__hire {
+  width: 120px;
+  margin-top: 30px;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  text-align: center;
+  background-color: #219fff; }
+
+.footer__up {
+  border-radius: 50%;
+  background-color: #ff7c5b;
+  position: absolute;
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%); }
